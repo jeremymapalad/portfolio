@@ -16,7 +16,7 @@ const SkillCard = ({ loading }: { loading: boolean }) => {
 
   const renderSkills = () => {
     return (
-      <div className="flex justify-between flex-col p-3 h-full w-full">
+      <div className="flex justify-between flex-col h-full w-full">
         <div className="shadow-xl border-b-4 border-slate-800 pb-8 mb-8">
           <h3 className="text-xl mb-4">Frontend</h3>
           <div className="flex w-full flex-wrap gap-1">
@@ -33,6 +33,10 @@ const SkillCard = ({ loading }: { loading: boolean }) => {
               alt="Redux"
             />
             <img
+              src="https://img.shields.io/badge/-jQuery-0769AD?style=flat-square&logo=jquery&logoColor=white"
+              alt="jQuery"
+            />
+            <img
               src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"
               alt="JavaScript"
             />
@@ -40,10 +44,7 @@ const SkillCard = ({ loading }: { loading: boolean }) => {
               src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"
               alt="TypeScript"
             />
-            <img
-              src="https://img.shields.io/badge/-jQuery-0769AD?style=flat-square&logo=jquery&logoColor=white"
-              alt="jQuery"
-            />
+
             <img
               src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white"
               alt="CSS3"
@@ -83,6 +84,10 @@ const SkillCard = ({ loading }: { loading: boolean }) => {
               alt="Express"
             />
             <img
+              alt="Spring Boot"
+              src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=spring-boot&logoColor=white"
+            />
+            <img
               src="https://img.shields.io/badge/-PHP-777BB4?style=flat-square&logo=php&logoColor=white"
               alt="PHP"
             />
@@ -90,15 +95,11 @@ const SkillCard = ({ loading }: { loading: boolean }) => {
               alt="Java"
               src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=java&logoColor=white"
             />
-            <img
-              alt="Spring Boot"
-              src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=spring-boot&logoColor=white"
-            />
           </div>
         </div>
 
         <div className="shadow-xl border-b-4 border-slate-800 pb-8 mb-8">
-          <h3 className="text-xl mb-4">CMS & HEADLESS CMS</h3>
+          <h3 className="text-xl mb-4">CMS & Headless CMS</h3>
           <div className="flex w-full flex-wrap gap-1">
             <img
               src="https://img.shields.io/badge/-WordPress-21759B?style=flat-square&logo=wordpress&logoColor=white"
@@ -206,7 +207,7 @@ const SkillCard = ({ loading }: { loading: boolean }) => {
     <div className="card shadow-lg compact bg-base-100">
       <div className="card-body">
         <div className="mx-3">
-          <h5 className="card-title">
+          <h5 className="card-title border-b-2 border-slate-700 pb-4">
             {loading ? (
               skeleton({ widthCls: 'w-32', heightCls: 'h-8' })
             ) : (
