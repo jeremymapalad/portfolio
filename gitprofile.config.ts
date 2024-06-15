@@ -33,7 +33,7 @@ const CONFIG = {
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'Click Ticker',
+          title: 'Click Ticker (2015)',
           description:
             'This project was one of my first freelance endeavors. It relied solely on plain HTML and CSS (pre-flexbox), complemented by Javascript (jQuery), highlighting my capability to craft pixel-perfect websites without dependence on CSS frameworks',
           imageUrl:

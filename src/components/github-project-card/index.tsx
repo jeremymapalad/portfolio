@@ -87,16 +87,6 @@ const GithubProjectCard = ({
             </p>
           </div>
           <div className="flex justify-between text-sm text-base-content text-opacity-60 truncate">
-            <div className="flex flex-grow">
-              <span className="mr-3 flex items-center">
-                <AiOutlineStar className="mr-0.5" />
-                <span>{item.stargazers_count}</span>
-              </span>
-              <span className="flex items-center">
-                <AiOutlineFork className="mr-0.5" />
-                <span>{item.forks_count}</span>
-              </span>
-            </div>
             <div>
               <span className="flex items-center">
                 <div
@@ -106,25 +96,25 @@ const GithubProjectCard = ({
                 <span>{item.language}</span>
               </span>
             </div>
-          </div>
 
-          <div className="flex justify-end mt-6">
-            <a
-              href={item.html_url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-1 px-2 rounded mr-1 text-xs"
-            >
-              Source Code
-            </a>
-            <a
-              href={item.homepage}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-green-500 hover:bg-green-600 text-white font-bold py-1 px-2 rounded ml-1 text-xs"
-            >
-              Live Demo
-            </a>
+            <div className="flex justify-end">
+              <a
+                href={item.html_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-1 px-2 rounded mr-1 text-xs"
+              >
+                Source Code
+              </a>
+              <a
+                href={item.homepage}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-500 hover:bg-green-600 text-white font-bold py-1 px-2 rounded ml-1 text-xs"
+              >
+                Live Demo
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -143,9 +133,7 @@ const GithubProjectCard = ({
                     {loading ? (
                       skeleton({ widthCls: 'w-40', heightCls: 'h-8' })
                     ) : (
-                      <span className="text-base-content opacity-70">
-                        {header}
-                      </span>
+                      <span className="text-base-content">{header}</span>
                     )}
                   </h5>
                   {loading ? (

@@ -59,61 +59,74 @@ const GithubProjectCard = ({ loading }: { loading: boolean }) => {
   const renderInfo = () => {
     return (
       <div className="p-3 h-full w-full">
-        <h2 className="text-xl mb-4">👨‍💻 As a Web Developer</h2>
-        <p className="mb-4">
-          With over 6 years in web development, I specialize in React, CSS, and
-          WordPress. My journey began in 2015 as a freelancer, focusing on
-          creating pixel-perfect, responsive websites using CSS and JavaScript.
-          This experience laid a solid foundation for my career.
-        </p>
+        <div className="flex gap-4 mb-8">
+          <div className="flex-1 card shadow-lg compact bg-base-100 p-8">
+            <h2 className="text-xl mb-4">👨‍💻 Web Development</h2>
+            <p className="mb-4">
+              With over 6 years in web development, I specialize in React, CSS,
+              and WordPress. My journey began in 2015 as a freelancer, focusing
+              on creating pixel-perfect, responsive websites using CSS and
+              JavaScript. This experience laid a solid foundation for my career.
+            </p>
+
+            <p className="mb-4">
+              Expanding into WordPress, I developed custom themes and plugins
+              tailored to client needs. When a project required React, I
+              embraced the challenge, and it has since become a cornerstone of
+              my toolkit alongside WordPress.
+            </p>
+
+            <p className="mb-8">
+              I am passionate about building intuitive, responsive websites that
+              enhance user interactions and consistently exceed client
+              expectations. I am eager to continue growing in a collaborative
+              and innovative environment, leveraging my skills and learning from
+              talented peers to tackle new challenges in web development.
+            </p>
+          </div>
+          <div className="flex-1 card shadow-lg compact bg-base-100 p-8">
+            <h2 className="text-xl mb-4">🎸 Other interests and hobbies:</h2>
+            <ul className="list-disc ml-6">
+              <li className="mb-2">
+                <span className="font-semibold">
+                  Playing musical instruments, especially guitar.
+                </span>{' '}
+                Check out my{' '}
+                <a
+                  href="https://www.youtube.com/channel/@jeremymapalad"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:underline"
+                >
+                  YouTube channel
+                </a>{' '}
+                if you're interested.
+              </li>
+              <li className="mb-2">
+                <span className="font-semibold">Reading books:</span> My top 3
+                favorites are <em>Atomic Habits</em>,{' '}
+                <em>The Obstacle Is the Way</em>, and <em>Eat That Frog</em>.
+              </li>
+              <li className="mb-2">
+                <span className="font-semibold">Playing video games.</span> I
+                enjoy exploring various genres, from strategy and RPGs to puzzle
+                and adventure games. Some of my favorites include{' '}
+                <em>The Legend of Zelda: Breath of the Wild</em>,{' '}
+                <em>Monster Hunter</em>, and <em>League of Legends</em>.
+              </li>
+              <li>
+                <span className="font-semibold">
+                  Tech-focused YouTube channel:
+                </span>{' '}
+                I'm planning to launch a channel to share insights and
+                tutorials, helping others while expanding my skills in
+                technology and video production.
+              </li>
+            </ul>
+          </div>
+        </div>
 
         <p className="mb-4">
-          Expanding into WordPress, I developed custom themes and plugins
-          tailored to client needs. When a project required React, I embraced
-          the challenge, and it has since become a cornerstone of my toolkit
-          alongside WordPress.
-        </p>
-
-        <p className="mb-8">
-          I am passionate about building intuitive, responsive websites that
-          enhance user interactions and consistently exceed client expectations.
-          I am eager to continue growing in a collaborative and innovative
-          environment, leveraging my skills and learning from talented peers to
-          tackle new challenges in web development.
-        </p>
-
-        <h2 className="text-xl mb-4">🎸 Other interests and hobbies:</h2>
-        <ul className="list-disc ml-6">
-          <li className="mb-2">
-            <span className="font-semibold">
-              Playing musical instruments, especially guitar.
-            </span>{' '}
-            Check out my{' '}
-            <a
-              href="https://www.youtube.com/channel/@jeremymapalad"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
-            >
-              YouTube channel
-            </a>{' '}
-            if you're interested.
-          </li>
-          <li className="mb-2">
-            <span className="font-semibold">Reading books:</span> My top 3
-            favorites are <em>Atomic Habits</em>,{' '}
-            <em>The Obstacle Is the Way</em>, and <em>Eat That Frog</em>.
-          </li>
-          <li className="mb-2">
-            <span className="font-semibold">Playing video games.</span> I enjoy
-            exploring various genres, from strategy and RPGs to puzzle and
-            adventure games. Some of my favorites include{' '}
-            <em>The Legend of Zelda: Breath of the Wild</em>,{' '}
-            <em>Monster Hunter</em>, and <em>League of Legends</em>.
-          </li>
-        </ul>
-
-        <p className="mb-4 mt-5 pt-5 border-t-2 border-slate-700">
           Check out the projects listed below on GitHub and external platforms.
           Please note that most of my work is protected by nondisclosure
           agreements (NDAs), so I can only show a few projects.
