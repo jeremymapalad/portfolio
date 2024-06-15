@@ -158,6 +158,10 @@ const SkillCard = ({ loading }: { loading: boolean }) => {
               alt="JIRA"
             />
             <img
+              src="https://img.shields.io/badge/-npm-CB3837?style=flat-square&logo=npm&logoColor=white"
+              alt="npm"
+            />
+            <img
               src="https://img.shields.io/badge/-Bitbucket-0052CC?style=flat&logo=bitbucket&logoColor=white"
               alt="Bitbucket"
             />
@@ -166,20 +170,16 @@ const SkillCard = ({ loading }: { loading: boolean }) => {
               alt="Docker"
             />
             <img
-              src="https://img.shields.io/badge/-npm-CB3837?style=flat-square&logo=npm&logoColor=white"
-              alt="npm"
-            />
-            <img
               src="https://img.shields.io/badge/-Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=white"
               alt="Firebase"
             />
             <img
-              src="https://img.shields.io/badge/-Webpack-8DD6F9?style=flat-square&logo=webpack&logoColor=white"
-              alt="Webpack"
-            />
-            <img
               src="https://img.shields.io/badge/-Vite-646CFF?style=flat-square&logo=vite&logoColor=white"
               alt="Vite"
+            />
+            <img
+              src="https://img.shields.io/badge/-Webpack-8DD6F9?style=flat-square&logo=webpack&logoColor=white"
+              alt="Webpack"
             />
             <img
               src="https://img.shields.io/badge/-Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=white"
@@ -190,12 +190,20 @@ const SkillCard = ({ loading }: { loading: boolean }) => {
               alt="Heroku"
             />
             <img
+              alt="Figma"
+              src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white&labelColor=F24E1E"
+            />
+            <img
               alt="Adobe Photoshop"
               src="https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?style=flat-square&logo=adobe-photoshop&logoColor=white&labelColor=31A8FF"
             />
             <img
-              alt="Figma"
-              src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white&labelColor=F24E1E"
+              src="https://img.shields.io/badge/AWS-orange?style=flat-square&logo=amazon-aws&logoColor=white"
+              alt="AWS Cloud"
+            />
+            <img
+              src="https://img.shields.io/badge/Kubernetes-gray?style=flat-square&logo=kubernetes&logoColor=white"
+              alt="Kubernetes Cluster"
             />
           </div>
         </div>

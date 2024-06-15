@@ -15,7 +15,7 @@ const ListItem = ({
 }) => (
   <li className="mb-5 ml-4">
     <div
-      className="absolute w-2 h-2 bg-base-300 rounded-full border border-base-300 mt-1.5"
+      className="absolute w-2 h-2 bg-base-content rounded-full border border-base-300 mt-1.5"
       style={{ left: '-4.5px' }}
     ></div>
     <div className="my-0.5 text-xs">{time}</div>
@@ -70,7 +70,7 @@ const ExperienceCard = ({
           </h5>
         </div>
         <div className="text-base-content text-opacity-60">
-          <ol className="relative border-l border-base-300 border-opacity-30 my-2 mx-4">
+          <ol className="relative border-l border-base-content border-opacity-30 my-2 mx-4">
             {loading ? (
               renderSkeleton()
             ) : (

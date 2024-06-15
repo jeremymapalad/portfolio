@@ -35,17 +35,15 @@ const CONFIG = {
         {
           title: 'Click Ticker (2015)',
           description:
-            'This project was one of my first freelance endeavors. It relied solely on plain HTML and CSS (pre-flexbox), complemented by Javascript (jQuery), highlighting my capability to craft pixel-perfect websites without dependence on CSS frameworks',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+            'This project was one of my first freelance endeavors. It relied solely on plain HTML and CSS (pre-flexbox), complemented by Javascript (jQuery), highlighting my capability to craft pixel-perfect websites without dependence on CSS frameworks.',
+          imageUrl: 'public/click-ticker.jpg',
           link: 'https://www.clickticker.com/',
         },
         {
           title: 'Project Name',
           description:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+          imageUrl: 'https://placehold.co/600x400',
           link: 'https://example.com',
         },
       ],
@@ -134,8 +132,8 @@ const CONFIG = {
     {
       institution: 'AMA East Rizal',
       degree: 'Bachelor of Science in Information Technology',
-      from: '2015',
-      to: '2019',
+      from: '2010',
+      to: '2015',
     },
   ],
   publications: [

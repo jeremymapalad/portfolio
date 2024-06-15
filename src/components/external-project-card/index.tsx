@@ -69,7 +69,7 @@ const ExternalProjectCard = ({
   const renderExternalProjects = () => {
     return externalProjects.map((item, index) => (
       <a
-        className="card shadow-lg compact bg-base-100 cursor-pointer"
+        className="parent group card shadow-lg compact bg-base-100 cursor-pointer"
         key={index}
         href={item.link}
         onClick={(e) => {
@@ -88,37 +88,33 @@ const ExternalProjectCard = ({
           window?.open(item.link, '_blank');
         }}
       >
-        <div className="p-8 h-full w-full">
-          <div className="flex items-center flex-col">
-            <div className="w-full">
-              <div className="text-center w-full mb-4">
-                {item.imageUrl && (
-                  <div className="avatar opacity-90">
-                    <div className="w-24 h-24 mask mask-squircle">
-                      <LazyImage
-                        src={item.imageUrl}
-                        alt={'thumbnail'}
-                        placeholder={skeleton({
-                          widthCls: 'w-full',
-                          heightCls: 'h-full',
-                          shape: '',
-                        })}
-                      />
-                    </div>
-                  </div>
-                )}
+        <div className="flex items-center flex-col">
+          <div className="text-center w-full">
+            {item.imageUrl && (
+              <div className="opacity-80 hover:opacity-100 transition-all overflow-hidden">
+                <div className="child group-hover:scale-110 transition-all duration-500">
+                  <LazyImage
+                    src={item.imageUrl}
+                    alt={'thumbnail'}
+                    placeholder={skeleton({
+                      widthCls: 'w-full',
+                      heightCls: 'h-full',
+                      shape: '',
+                    })}
+                  />
+                </div>
               </div>
+            )}
+          </div>
 
-              <div className="w-full">
-                <h2 className="font-medium text-xl opacity-60 mb-2">
-                  {item.title}
-                </h2>
+          <div className="w-full p-4">
+            <h2 className="font-medium text-xl opacity-60 mb-2">
+              {item.title}
+            </h2>
 
-                <p className="mt-2 text-base-content text-opacity-60 text-sm text-justify">
-                  {item.description}
-                </p>
-              </div>
-            </div>
+            <p className="mt-2 text-base-content text-opacity-60 text-sm text-justify">
+              {item.description}
+            </p>
           </div>
         </div>
       </a>
@@ -142,7 +138,7 @@ const ExternalProjectCard = ({
                   </h5>
                 </div>
                 <div className="col-span-2">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {loading ? renderSkeleton() : renderExternalProjects()}
                   </div>
                 </div>
