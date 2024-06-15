@@ -20,12 +20,14 @@ import { BG_COLOR } from '../constants';
 import AvatarCard from './avatar-card';
 import { Profile } from '../interfaces/profile';
 import DetailsCard from './details-card';
-import SkillCard from './skill-card';
+// import SkillCard from './skill-card';
 import ExperienceCard from './experience-card';
 import EducationCard from './education-card';
 import CertificationCard from './certification-card';
 import { GithubProject } from '../interfaces/github-project';
 import GithubProjectCard from './github-project-card';
+import AboutMe from './about-me';
+import TechStack from './tech-stack';
 import ExternalProjectCard from './external-project-card';
 import BlogCard from './blog-card';
 import Footer from './footer';
@@ -218,12 +220,13 @@ const GitProfile = ({ config }: { config: Config }) => {
                       github={sanitizedConfig.github}
                       social={sanitizedConfig.social}
                     />
-                    {sanitizedConfig.skills.length !== 0 && (
+                    {/* {sanitizedConfig.skills.length !== 0 && (
                       <SkillCard
                         loading={loading}
                         skills={sanitizedConfig.skills}
                       />
-                    )}
+                    )} */}
+                    <TechStack loading={loading} />
                     {sanitizedConfig.experiences.length !== 0 && (
                       <ExperienceCard
                         loading={loading}
@@ -244,8 +247,12 @@ const GitProfile = ({ config }: { config: Config }) => {
                     )}
                   </div>
                 </div>
+
+                {/* Second Column */}
                 <div className="lg:col-span-2 col-span-1">
                   <div className="grid grid-cols-1 gap-6">
+                    <AboutMe loading={loading} />
+
                     {sanitizedConfig.projects.github.display && (
                       <GithubProjectCard
                         header={sanitizedConfig.projects.github.header}
@@ -253,7 +260,6 @@ const GitProfile = ({ config }: { config: Config }) => {
                         githubProjects={githubProjects}
                         loading={loading}
                         username={sanitizedConfig.github.username}
-                        googleAnalyticsId={sanitizedConfig.googleAnalytics.id}
                       />
                     )}
                     {sanitizedConfig.publications.length !== 0 && (

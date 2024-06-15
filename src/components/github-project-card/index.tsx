@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import { AiOutlineFork, AiOutlineStar } from 'react-icons/ai';
 import { MdInsertLink } from 'react-icons/md';
-import { ga, getLanguageColor, skeleton } from '../../utils';
+import { getLanguageColor, skeleton } from '../../utils';
 import { GithubProject } from '../../interfaces/github-project';
 
 const GithubProjectCard = ({
@@ -10,14 +10,12 @@ const GithubProjectCard = ({
   loading,
   limit,
   username,
-  googleAnalyticsId,
 }: {
   header: string;
   githubProjects: GithubProject[];
   loading: boolean;
   limit: number;
   username: string;
-  googleAnalyticsId?: string;
 }) => {
   if (!loading && githubProjects.length === 0) {
     return;
@@ -75,26 +73,7 @@ const GithubProjectCard = ({
 
   const renderProjects = () => {
     return githubProjects.map((item, index) => (
-      <a
-        className="card shadow-lg compact bg-base-100 cursor-pointer"
-        href={item.html_url}
-        key={index}
-        onClick={(e) => {
-          e.preventDefault();
-
-          try {
-            if (googleAnalyticsId) {
-              ga.event('Click project', {
-                project: item.name,
-              });
-            }
-          } catch (error) {
-            console.error(error);
-          }
-
-          window?.open(item.html_url, '_blank');
-        }}
-      >
+      <div className="card shadow-lg compact bg-base-100" key={index}>
         <div className="flex justify-between flex-col p-8 h-full w-full">
           <div>
             <div className="flex items-center truncate">
@@ -128,8 +107,27 @@ const GithubProjectCard = ({
               </span>
             </div>
           </div>
+
+          <div className="flex justify-end mt-6">
+            <a
+              href={item.html_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-1 px-2 rounded mr-1 text-xs"
+            >
+              Source Code
+            </a>
+            <a
+              href={item.homepage}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-500 hover:bg-green-600 text-white font-bold py-1 px-2 rounded ml-1 text-xs"
+            >
+              Live Demo
+            </a>
+          </div>
         </div>
-      </a>
+      </div>
     ));
   };
 
