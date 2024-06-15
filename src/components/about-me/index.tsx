@@ -61,12 +61,13 @@ const GithubProjectCard = ({ loading }: { loading: boolean }) => {
       <div className="p-3 h-full w-full">
         <div className="flex gap-4 mb-8">
           <div className="flex-1 card shadow-lg compact bg-base-100 p-8">
-            <h2 className="text-xl mb-4">👨‍💻 Web Development</h2>
+            <h2 className="text-lg mb-4">👨‍💻 Web Development</h2>
             <p className="mb-4">
-              With over 6 years in web development, I specialize in React, CSS,
-              and WordPress. My journey began in 2015 as a freelancer, focusing
-              on creating pixel-perfect, responsive websites using CSS and
-              JavaScript. This experience laid a solid foundation for my career.
+              With over 6 years in web development within corporate
+              environments, I specialize in React, CSS, and WordPress. My
+              journey began in 2015 as a freelancer, focusing on creating
+              pixel-perfect, responsive websites using CSS and JavaScript. This
+              experience laid a solid foundation for my career.
             </p>
 
             <p className="mb-4">
@@ -76,16 +77,15 @@ const GithubProjectCard = ({ loading }: { loading: boolean }) => {
               my toolkit alongside WordPress.
             </p>
 
-            <p className="mb-8">
-              I am passionate about building intuitive, responsive websites that
-              enhance user interactions and consistently exceed client
-              expectations. I am eager to continue growing in a collaborative
-              and innovative environment, leveraging my skills and learning from
-              talented peers to tackle new challenges in web development.
+            <p>
+              I excel in crafting responsive, user-centric websites that surpass
+              client expectations. Eager to grow in collaborative, innovative
+              environments, I aim to learn from peers and tackle new web
+              development challenges.
             </p>
           </div>
           <div className="flex-1 card shadow-lg compact bg-base-100 p-8">
-            <h2 className="text-xl mb-4">🎸 Other interests and hobbies:</h2>
+            <h2 className="text-lg mb-4">🎸 Other interests and hobbies:</h2>
             <ul className="list-disc ml-6">
               <li className="mb-2">
                 <span className="font-semibold">
