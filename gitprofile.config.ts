@@ -35,7 +35,7 @@ const CONFIG = {
         {
           title: 'Click Ticker (2015)',
           description:
-            'This project was one of my first freelance endeavors. It relied solely on plain HTML and CSS (pre-flexbox), complemented by Javascript (jQuery), highlighting my capability to craft pixel-perfect websites without dependence on CSS frameworks.',
+            'This project was one of my first freelance projects. It relied solely on plain HTML and CSS (pre-flexbox), complemented by Javascript (jQuery), highlighting my capability to craft pixel-perfect websites without dependence on CSS frameworks.',
           imageUrl:
             'https://raw.githubusercontent.com/jeremymapalad/portfolio/main/public/click-ticker.jpg',
           link: 'https://www.clickticker.com/',
