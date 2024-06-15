@@ -129,7 +129,7 @@ const ExternalProjectCard = ({
             <div className="card compact bg-base-100 shadow bg-opacity-40">
               <div className="card-body">
                 <div className="mx-3 flex items-center justify-between mb-2">
-                  <h5 className="card-title">
+                  <h5 className="card-title text-2xl opacity-90">
                     {loading ? (
                       skeleton({ widthCls: 'w-40', heightCls: 'h-8' })
                     ) : (

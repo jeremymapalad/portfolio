@@ -127,14 +127,16 @@ const GithubProjectCard = ({ loading }: { loading: boolean }) => {
         </div>
 
         <p className="mb-4">
-          Check out the projects listed below on GitHub and external platforms.
-          Please note that most of my work is protected by nondisclosure
-          agreements (NDAs), so I can only show a few projects.
+          Check out the projects listed below on GitHub and external platforms.{' '}
         </p>
         <p>
-          The self-initiated projects listed here are intended to showcase the
-          quality and style of my professional work, which I undertake in my
-          free time.
+          <b>
+            Please note that most of my work is protected by non-disclosure
+            agreements (NDAs)
+          </b>
+          , so I can only show a few projects. The self-initiated projects
+          listed here are intended to showcase the quality and style of my
+          professional work, which I undertake in my free time.
         </p>
       </div>
     );
@@ -148,7 +150,7 @@ const GithubProjectCard = ({ loading }: { loading: boolean }) => {
             <div className="card compact bg-base-100 shadow bg-opacity-40">
               <div className="card-body">
                 <div className="mx-3 flex items-center justify-between mb-2">
-                  <h5 className="card-title">
+                  <h5 className="card-title text-2xl opacity-90">
                     {loading ? (
                       skeleton({ widthCls: 'w-40', heightCls: 'h-8' })
                     ) : (
