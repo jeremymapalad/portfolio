@@ -27,7 +27,7 @@ import CertificationCard from './certification-card';
 import { GithubProject } from '../interfaces/github-project';
 import GithubProjectCard from './github-project-card';
 import AboutMe from './about-me';
-import TechStack from './tech-stack';
+import Hobbies from './hobbies';
 import ExternalProjectCard from './external-project-card';
 import BlogCard from './blog-card';
 import Footer from './footer';
@@ -232,7 +232,7 @@ const GitProfile = ({ config }: { config: Config }) => {
                         experiences={sanitizedConfig.experiences}
                       />
                     )}
-                    <TechStack loading={loading} />
+                    <Hobbies loading={loading} />
                     {sanitizedConfig.certifications.length !== 0 && (
                       <CertificationCard
                         loading={loading}
