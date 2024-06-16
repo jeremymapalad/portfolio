@@ -61,7 +61,6 @@ const GithubProjectCard = ({ loading }: { loading: boolean }) => {
       <div className="p-3 h-full w-full">
         <div className="flex-col lg:flex-row flex gap-4 mb-8">
           <div className="flex-1 card shadow-lg compact bg-base-100 p-8">
-            <h2 className="text-lg mb-4">👨‍💻 Web Development</h2>
             <p className="mb-4">
               I'm a web developer with experience across various domains, having
               worked in both corporate settings and as a freelancer.
@@ -70,24 +69,22 @@ const GithubProjectCard = ({ loading }: { loading: boolean }) => {
               <u>My expertise centers on frontend development</u>, with a strong
               focus on React.js and Redux for state management, enhanced by
               TypeScript for robust and type-safe applications. I am well-versed
-              in integrating APIs. Currently, I am advancing my skills in
-              Next.js to build efficient and scalable server-side rendered web
-              applications.
+              in integrating APIs.
             </p>
             <p className="mb-4">
               <u>In UI design</u>, I specialize in creating modern and
-              responsive interfaces using Tailwind CSS, Bootstrap, or Material
-              UI (MUI) for efficient and stylish layouts, with a strong emphasis
-              on responsive mobile design. I ensure that designs are
-              pixel-perfect and meticulously adhere to design specifications.
+              responsive interfaces using Tailwind CSS, Bootstrap, or (MUI) for
+              efficient and stylish layouts, with a strong emphasis on
+              responsive mobile design. I ensure that designs are pixel-perfect
+              and precisely adhere to design specifications.
             </p>
             <p className="mb-4">
               <u>On the backend</u>, I am proficient in Node.js and Express.js
               for building robust server-side applications. I leverage MongoDB
-              and Mongoose for efficient data modeling and storage, ensuring
-              scalability and performance. Additionally, I integrate AWS S3 for
-              secure file storage and retrieval and use tools like Postman for
-              API testing and validation.
+              and Mongoose for efficient data modeling and storage.
+              Additionally, I integrate AWS S3 for secure file storage and
+              retrieval and use tools like Postman for API testing and
+              validation.
             </p>
             <p className="mb-4">
               <u>
@@ -101,10 +98,8 @@ const GithubProjectCard = ({ loading }: { loading: boolean }) => {
             </p>
             <p className="mb-4">
               I also have extensive experience in WordPress, specializing in
-              crafting custom themes from scratch. My expertise ensures that
-              these themes are tailored precisely to client requirements,
-              delivering enhanced user experiences through responsive design and
-              intuitive functionality.
+              crafting themes from scratch. My expertise ensures that these
+              themes are tailored precisely to client requirements.
             </p>
             <p>
               I'm driven to continue advancing as a web developer, seeking
@@ -272,10 +267,6 @@ const GithubProjectCard = ({ loading }: { loading: boolean }) => {
                 <img
                   src="https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white"
                   alt="Docker"
-                />
-                <img
-                  src="https://img.shields.io/badge/Kubernetes-gray?style=flat-square&logo=kubernetes&logoColor=white"
-                  alt="Kubernetes Cluster"
                 />
                 <img
                   src="https://img.shields.io/badge/-Vite-646CFF?style=flat-square&logo=vite&logoColor=white"
