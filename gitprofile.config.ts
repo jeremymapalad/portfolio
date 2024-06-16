@@ -40,13 +40,6 @@ const CONFIG = {
             'https://raw.githubusercontent.com/jeremymapalad/portfolio/main/public/click-ticker.jpg',
           link: 'https://www.clickticker.com/',
         },
-        {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl: 'https://placehold.co/600x400',
-          link: 'https://example.com',
-        },
       ],
     },
   },
