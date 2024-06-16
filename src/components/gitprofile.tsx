@@ -226,13 +226,13 @@ const GitProfile = ({ config }: { config: Config }) => {
                         skills={sanitizedConfig.skills}
                       />
                     )} */}
-                    <TechStack loading={loading} />
                     {sanitizedConfig.experiences.length !== 0 && (
                       <ExperienceCard
                         loading={loading}
                         experiences={sanitizedConfig.experiences}
                       />
                     )}
+                    <TechStack loading={loading} />
                     {sanitizedConfig.certifications.length !== 0 && (
                       <CertificationCard
                         loading={loading}
