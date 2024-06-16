@@ -59,7 +59,7 @@ const GithubProjectCard = ({ loading }: { loading: boolean }) => {
   const renderInfo = () => {
     return (
       <div className="p-3 h-full w-full">
-        <div className="flex gap-4 mb-8">
+        <div className="flex-col lg:flex-row flex gap-4 mb-8">
           <div className="flex-1 card shadow-lg compact bg-base-100 p-8">
             <h2 className="text-lg mb-4">👨‍💻 Web Development</h2>
             <p className="mb-4">
@@ -113,7 +113,7 @@ const GithubProjectCard = ({ loading }: { loading: boolean }) => {
             </p>
           </div>
           <div className="flex-1 card shadow-lg compact bg-base-100 p-8">
-            <div className="shadow-xl border-b-2 border-slate-800 pb-8 mb-8">
+            <div className="shadow-xl mb-8">
               <h3 className="text-xl mb-4">Frontend</h3>
               <div className="flex w-full flex-wrap gap-1">
                 <img
@@ -168,7 +168,7 @@ const GithubProjectCard = ({ loading }: { loading: boolean }) => {
               </div>
             </div>
 
-            <div className="shadow-xl border-b-2 border-slate-800 pb-8 mb-8">
+            <div className="shadow-xl mb-8">
               <h3 className="text-xl mb-4">Backend</h3>
               <div className="flex w-full flex-wrap gap-1">
                 <img
@@ -194,7 +194,7 @@ const GithubProjectCard = ({ loading }: { loading: boolean }) => {
               </div>
             </div>
 
-            <div className="shadow-xl border-b-2 border-slate-800 pb-8 mb-8">
+            <div className="shadow-xl mb-8">
               <h3 className="text-xl mb-4">CMS & Headless CMS</h3>
               <div className="flex w-full flex-wrap gap-1">
                 <img
@@ -212,7 +212,7 @@ const GithubProjectCard = ({ loading }: { loading: boolean }) => {
               </div>
             </div>
 
-            <div className="shadow-xl border-b-2 border-slate-800 pb-8 mb-8">
+            <div className="shadow-xl mb-8">
               <h3 className="text-xl mb-4">Database</h3>
               <div className="flex w-full flex-wrap gap-1">
                 <img
