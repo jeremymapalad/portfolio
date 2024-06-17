@@ -105,14 +105,17 @@ const GithubProjectCard = ({
               >
                 Source Code
               </a>
-              <a
-                href={item.homepage}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-green-500 hover:bg-green-600 text-white font-bold py-1 px-2 rounded ml-1 text-xs"
-              >
-                Live Demo
-              </a>
+
+              {item.homepage && (
+                <a
+                  href={item.homepage}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-green-500 hover:bg-green-600 text-white font-bold py-1 px-2 rounded ml-1 text-xs"
+                >
+                  Live Demo
+                </a>
+              )}
             </div>
           </div>
         </div>
