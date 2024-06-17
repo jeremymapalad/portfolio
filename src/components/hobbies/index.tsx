@@ -59,7 +59,7 @@ const SkillCard = ({ loading }: { loading: boolean }) => {
   };
 
   return (
-    <div className="card shadow-lg compact bg-base-100">
+    <div className="card shadow-lg compact bg-base-100 hidden md:block">
       <div className="card-body">
         <div className="mx-3">
           <h5 className="card-title border-b-2 border-slate-800 pb-4">
