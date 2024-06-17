@@ -292,6 +292,18 @@ const GithubProjectCard = ({ loading }: { loading: boolean }) => {
                   alt="Adobe Photoshop"
                   src="https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?style=flat-square&logo=adobe-photoshop&logoColor=white&labelColor=31A8FF"
                 />
+                <img
+                  src="https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white"
+                  alt="Postman"
+                />
+                <img
+                  src="https://img.shields.io/badge/Jest-99425b?style=flat-square&logo=jest&logoColor=white"
+                  alt="Jest"
+                />
+                <img
+                  src="https://img.shields.io/badge/Jenkins-d43e39?style=flat-square&logo=jenkins&logoColor=white"
+                  alt="Jenkins"
+                />
               </div>
             </div>
           </div>
